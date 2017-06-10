@@ -8,12 +8,12 @@
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "node-sass-chokidar": "0.0.2",
+    "react-dom": "^15.5.4",
     "npm-run-all": "^4.0.2",
     "react-scripts": "1.0.7"
+  },
+  "devDependencies": {
+    "node-sass-chokidar": "0.0.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
