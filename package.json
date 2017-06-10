@@ -7,9 +7,11 @@
   },
   "private": true,
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "node-sass-chokidar": "0.0.2",
     "npm-run-all": "^4.0.2",
     "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
     "react-scripts": "1.0.7"
   },

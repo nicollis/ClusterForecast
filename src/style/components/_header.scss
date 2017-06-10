@@ -1,8 +1,25 @@
 .Header {
-  background-color: #222;
+  background-color: $background-dark;
   padding: 20px;
-  color: white;
+  color: $white;
   .Logo {
-    height: 80px;
+    height: 55px;
   }
+  .dropdown {
+    font-size: 16pt;
+    list-style: none;
+    font-family: $impact;
+    font-weight: 800;
+    position: relative;
+    top: 14px;
+    .caret {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #fff;
+    }
+    .dropdown-toggle {
+      color: $white !important;
+    }
+  }
+  
 }
