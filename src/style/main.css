@@ -5,6 +5,31 @@ body {
   font-family: sans-serif;
   background-color: #FAFBFC; }
 
+.App .panel-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  font-size: 18pt; }
+
+.App .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #000;
+  font-size: 20pt; }
+
+.App .sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #2C2F31;
+  font-size: 16pt; }
+
+.App .info {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #7e8692;
+  font-size: 14pt; }
+
 .Header {
   background-color: #2C2F31;
   padding: 20px;
@@ -30,3 +55,20 @@ body {
       border-top: 5px solid #fff; }
     .Header .dropdown .dropdown-toggle {
       color: #fff !important; }
+
+.dayforecast {
+  text-align: center; }
+  .dayforecast h1 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    color: #F25F24;
+    font-size: 80pt;
+    -webkit-text-stroke: 4px #2C2F31;
+    margin: 0px;
+    line-height: .8; }
+  .dayforecast .conditions {
+    color: #F25F24;
+    font-size: 70pt;
+    -webkit-text-stroke: 4px #2C2F31; }
+  .dayforecast .info {
+    padding-top: 10px; }

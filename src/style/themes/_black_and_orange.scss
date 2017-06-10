@@ -3,14 +3,29 @@
 // General Variables
 $white: #fff;
 $black: #000;
+$off-black: #2C2F31;
 $background-dark: #2C2F31;
 $off-white: #FAFBFC;
+$primary-accent: #F25F24;
+$mid-accent: #7e8692;
 
 $impact: 'Work Sans', sans-serif;
 $std-font: 'Montserrat', sans-serif;
 
 // App Style
 $body-background: $off-white;
+
+$title-text: $std-font;
+$title-weight: bold;
+$title-color: $black;
+
+$sub-title-text: $std-font;
+$sub-title-weight: bold;
+$sub-title-color: $off-black;
+
+$info-title-text: $std-font;
+$info-title-weight: 400;
+$info-title-color: $mid-accent;
 
 // Header Style
 $header-background: $background-dark;
@@ -19,3 +34,6 @@ $header-font-family: $impact;
 $header-weight : bold;
 
 // Day Forcast
+$score-color: $primary-accent;
+$score-font: $impact;
+$score-border-color: $off-black;

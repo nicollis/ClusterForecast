@@ -1,0 +1,20 @@
+.dayforecast {
+  text-align: center;
+  h1{
+    font-family: $score-font;
+    font-weight: bold;
+    color: $score-color;
+    font-size: 80pt;
+    -webkit-text-stroke: 4px $score-border-color;
+    margin: 0px;
+    line-height: .8;
+  }
+  .conditions {
+    color: $score-color;
+    font-size: 70pt;
+    -webkit-text-stroke: 4px $score-border-color;
+  }
+  .info {
+    padding-top: 10px;
+  }
+}

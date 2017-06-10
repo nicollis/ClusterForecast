@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import {Row, Col} from 'react-bootstrap';
 import Header from './Header';
+import DayForecast from './DayForecast';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Header />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Row>
+          <Col md={6}>
+            <DayForecast/>
+          </Col>
+        </Row>
       </div>
     );
   }

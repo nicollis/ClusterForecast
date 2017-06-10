@@ -2,3 +2,31 @@ body {
   font-family: sans-serif;
   background-color: $body-background;
 }
+
+.App {
+  .panel-heading {
+    font-family: $title-text;
+    font-weight: $title-weight;
+    color: $title-color;
+    text-align: left;
+    font-size: 18pt;
+  }
+  .title {
+    font-family: $title-text;
+    font-weight: $title-weight;
+    color: $title-color;
+    font-size: 20pt;
+  }
+  .sub-title {
+    font-family: $sub-title-text;
+    font-weight: $sub-title-weight;
+    color: $sub-title-color;
+    font-size: 16pt;
+  }
+  .info {
+    font-family: $info-title-text;
+    font-weight: $info-title-weight;
+    color: $info-title-color;
+    font-size: 14pt;
+  }
+}
