@@ -30,6 +30,9 @@ body {
   color: #7e8692;
   font-size: 14pt; }
 
+.App .accent {
+  color: #F25F24; }
+
 .Header {
   background-color: #2C2F31;
   padding: 20px;
@@ -72,3 +75,14 @@ body {
     -webkit-text-stroke: 4px #2C2F31; }
   .dayforecast .info {
     padding-top: 10px; }
+  .dayforecast .accent {
+    -webkit-text-stroke: 1px #2C2F31; }
+
+.quickdaystats .sub-title {
+  font-size: 14pt;
+  margin-bottom: 0; }
+
+.quickdaystats .info {
+  font-size: 12pt;
+  line-height: 1;
+  margin: 0; }
