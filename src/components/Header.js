@@ -41,8 +41,8 @@ class Header extends Component {
         <Col md={2}>
           <img src={logo} className="Logo" alt="logo" />
         </Col>
-        <Col md={2}>
-          <NavDropdown key="1" title={(this.state.cities.find(c => c.id === this.state.selected_city)).name} id="nav-dropdown-within-tab">
+        <Col md={3}>
+          <NavDropdown key="1" title={(this.state.cities.find(c => c.id === this.state.selected_city)).name.toUpperCase()} id="nav-dropdown-within-tab">
             {this.renderDropdownList()}
           </NavDropdown>
         </Col>
