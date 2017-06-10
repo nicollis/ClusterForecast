@@ -1,9 +1,9 @@
 @import 'https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Work+Sans:800';
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background-color: #FAFBFC; }
 
 .Header {
   background-color: #2C2F31;
@@ -11,11 +11,17 @@ body {
   color: #fff; }
   .Header .Logo {
     height: 55px; }
+  .Header .fa {
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    right: 10px; }
   .Header .dropdown {
+    display: inline-block;
     font-size: 16pt;
     list-style: none;
     font-family: "Work Sans", sans-serif;
-    font-weight: 800;
+    font-weight: bold;
     position: relative;
     top: 14px; }
     .Header .dropdown .caret {

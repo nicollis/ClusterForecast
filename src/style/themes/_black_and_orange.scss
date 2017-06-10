@@ -1,7 +1,21 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Work+Sans:800';
 
+// General Variables
 $white: #fff;
+$black: #000;
 $background-dark: #2C2F31;
+$off-white: #FAFBFC;
 
 $impact: 'Work Sans', sans-serif;
 $std-font: 'Montserrat', sans-serif;
+
+// App Style
+$body-background: $off-white;
+
+// Header Style
+$header-background: $background-dark;
+$header-text-color: $white;
+$header-font-family: $impact;
+$header-weight : bold;
+
+// Day Forcast

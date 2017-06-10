@@ -42,6 +42,7 @@ class Header extends Component {
           <img src={logo} className="Logo" alt="logo" />
         </Col>
         <Col md={3}>
+          <i className="fa fa-map-marker fa-2x" aria-hidden="true"></i>
           <NavDropdown key="1" title={(this.state.cities.find(c => c.id === this.state.selected_city)).name.toUpperCase()} id="nav-dropdown-within-tab">
             {this.renderDropdownList()}
           </NavDropdown>
