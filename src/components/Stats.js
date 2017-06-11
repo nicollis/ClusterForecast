@@ -36,7 +36,7 @@ class Stats extends Component {
 
   render() {
     return (
-      <Panel header="DETAILED STATS" className="stats">
+      <Panel header="WEEKLY STATS" className="stats">
         <Row>
           <Col sm={6} >
             <h3 className="sub-title week_overview">WEEK OVERVIEW</h3>

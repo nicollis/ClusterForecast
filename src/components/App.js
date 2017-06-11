@@ -4,6 +4,7 @@ import Header from './Header';
 import DayForecast from './DayForecast';
 import Stats from './Stats'
 import Warnings from './Warnings'
+import TenDayForecast from './TenDayForecast'
 
 class App extends Component {
   render() {
@@ -18,6 +19,11 @@ class App extends Component {
             </Col>
             <Col md={6}>
               <Stats/>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+              <TenDayForecast/>
             </Col>
           </Row>
         </div>
