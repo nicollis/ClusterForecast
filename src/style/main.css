@@ -72,11 +72,9 @@ body {
   .dayforecast .conditions {
     color: #F25F24;
     font-size: 70pt;
-    -webkit-text-stroke: 4px #2C2F31; }
+    -webkit-text-stroke: 2px #2C2F31; }
   .dayforecast .info {
     padding-top: 10px; }
-  .dayforecast .accent {
-    -webkit-text-stroke: 1px #2C2F31; }
 
 .quickdaystats .sub-title {
   font-size: 14pt;
@@ -86,3 +84,15 @@ body {
   font-size: 12pt;
   line-height: 1;
   margin: 0; }
+
+.stats .sub-title {
+  margin-top: 0px; }
+
+.stats .info {
+  padding-top: 16px; }
+
+.stats .other_weeks .sub-title {
+  text-align: center; }
+
+.stats .other_weeks .recharts-wrapper {
+  left: 25%; }

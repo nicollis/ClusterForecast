@@ -12,12 +12,11 @@
   .conditions {
     color: $score-color;
     font-size: 70pt;
-    -webkit-text-stroke: 4px $score-border-color;
+    -webkit-text-stroke: 2px $score-border-color;
   }
   .info {
     padding-top: 10px;
   }
   .accent {
-    -webkit-text-stroke: 1px $score-border-color;
   }
 }
