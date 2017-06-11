@@ -131,6 +131,8 @@ body {
 
 .ten_day_forecast {
   margin-top: 20px; }
+  .ten_day_forecast .recharts-responsive-container {
+    margin-top: 30px; }
 
 .score_label {
   font-family: "Work Sans", sans-serif;

@@ -18,11 +18,11 @@ class TenDayForecast extends Component {
       <Panel header="EXTENDED FORECAST" className="ten_day_forecast">
         <Row>
           <Col xs={12}>
-            <ResponsiveContainer width="100%" aspect={3}>
-              <ComposedChart width={600} height={400} data={data}
+            <ResponsiveContainer className="graph" width="100%" aspect={3}>
+              <ComposedChart width={600} height={500} data={data}
                     margin={{top: 20, right: 20, bottom: 20, left: 20}}>
                   <XAxis dataKey="name"/>
-                  <YAxis dataKey='score' yAxisId='score'domain={[0, 10]} hide={true}/>
+                  <YAxis dataKey='score' yAxisId='score'domain={[0, 12]} hide={true}/>
                   <YAxis dataKey='temp' yAxisId='temp' domain={['dataMin - 10', 'dataMax + 10']}/>
                   <YAxis dataKey='rain' yAxisId='rain' domain={[0, 100]} orientation="right"/>
                   <Tooltip/>
