@@ -12,7 +12,7 @@ class TenDayForecast extends Component {
               {name: 'Wednesday', score: 6, temp: 88, rain: 10},
               {name: 'Thursday', score: 8, temp: 75, rain: 50},
               {name: 'Friday', score: 5, temp: 90, rain: 20},
-              {name: 'Saturday', score: 9, temp: 80, rain: 60},
+              {name: 'Saturday', score: 10, temp: 80, rain: 60},
               {name: 'Sunday', score: 4, temp: 95, rain: 10}];
     return(
       <Panel header="EXTENDED FORECAST" className="ten_day_forecast">
