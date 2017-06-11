@@ -1,3 +1,5 @@
+$app-max-width: 1250px;
+
 body {
   font-family: sans-serif;
   background-color: $body-background;
@@ -9,6 +11,10 @@ body {
 }
 
 .App {
+  .dashboard{
+    max-width: $app-max-width;
+    margin: 20px auto;
+  }
   .panel-heading {
     font-family: $title-text;
     font-weight: $title-weight;

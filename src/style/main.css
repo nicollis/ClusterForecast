@@ -9,6 +9,10 @@ body {
   margin-right: 0px;
   margin-left: 0px; }
 
+.App .dashboard {
+  max-width: 1250px;
+  margin: 20px auto; }
+
 .App .panel-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -41,6 +45,9 @@ body {
   background-color: #2C2F31;
   padding: 20px;
   color: #fff; }
+  .Header .header_container {
+    max-width: 1250px;
+    margin: auto; }
   .Header .Logo {
     height: 55px; }
   .Header .fa {

@@ -2,6 +2,10 @@
   background-color: $header-background;
   padding: 20px;
   color: $header-text-color;
+  .header_container{
+    max-width: $app-max-width;
+    margin: auto;
+  }
   .Logo {
     height: 55px;
   }

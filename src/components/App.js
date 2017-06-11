@@ -10,15 +10,17 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Row>
-          <Col md={6}>
-            <DayForecast/>
-            <Warnings/>
-          </Col>
-          <Col md={6}>
-            <Stats/>
-          </Col>
-        </Row>
+        <div className="dashboard">
+          <Row>
+            <Col md={6}>
+              <DayForecast/>
+              <Warnings/>
+            </Col>
+            <Col md={6}>
+              <Stats/>
+            </Col>
+          </Row>
+        </div>
       </div>
     );
   }
