@@ -131,3 +131,8 @@ body {
 
 .ten_day_forecast {
   margin-top: 20px; }
+
+.score_label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  color: #F25F24; }
