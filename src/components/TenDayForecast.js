@@ -7,7 +7,7 @@ class TenDayForecast extends Component {
 
 
   render() {
-    const data = [{name: 'Monday', score: 3, temp: 90, rain: 0},
+    const data = [{name: 'Monday', score: 1, temp: 90, rain: 0},
               {name: 'Tuesday', score: 4, temp: 85, rain: 0},
               {name: 'Wednesday', score: 6, temp: 88, rain: 10},
               {name: 'Thursday', score: 8, temp: 75, rain: 50},
