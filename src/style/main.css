@@ -5,6 +5,10 @@ body {
   font-family: sans-serif;
   background-color: #FAFBFC; }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 .App .panel-heading {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -96,3 +100,24 @@ body {
 
 .stats .other_weeks .recharts-wrapper {
   left: 25%; }
+
+.warning_container .row {
+  margin-bottom: 6px; }
+
+.warning_container .warning {
+  border: 2px solid #F25F24;
+  border-radius: 5px;
+  height: 45px;
+  padding: 0px;
+  background-color: #fff;
+  color: #2C2F31; }
+  .warning_container .warning .icon {
+    width: 60px;
+    height: 100%;
+    color: #fff;
+    background-color: #F25F24;
+    font-size: 25pt;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.3;
+    margin-right: 10px; }

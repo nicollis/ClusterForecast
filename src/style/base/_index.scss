@@ -3,6 +3,11 @@ body {
   background-color: $body-background;
 }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 .App {
   .panel-heading {
     font-family: $title-text;

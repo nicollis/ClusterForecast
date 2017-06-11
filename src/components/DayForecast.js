@@ -49,7 +49,7 @@ class DayForecast extends Component {
           </Col>
           <Col sm={6}>
             <h3 className="title">CONDITIONS</h3>
-            <Row><i className={today.icon + " fa fa-5x conditions"} aria-hidden="true"></i></Row>
+            <Row><i className={`${today.icon} fa fa-5x conditions`} aria-hidden="true"></i></Row>
             <h4 className="info">{today.modifier}</h4>
           </Col>
         </Row>
