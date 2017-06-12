@@ -55,7 +55,7 @@ class App extends Component {
       <div className="App">
         <Header 
           locations={this.state.locations} 
-          city={this.state.selected_location} 
+          city={this.state.selected_location}
           changeCity={(i) => this.changeCity(i)}
         />
         <div className="dashboard">
@@ -72,7 +72,7 @@ class App extends Component {
               </Row>
               <Row>
                 <Col md={12}>
-                  <TenDayForecast/>
+                  <TenDayForecast weather={this.state.selected_weather}/>
                 </Col>
               </Row>
             </div>
