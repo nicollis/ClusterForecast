@@ -37,11 +37,11 @@ class Stats extends Component {
       data[CalculateGrade(day)] += 1;
     }
     return [
-      {name: "A", uv: data[1], pv: 7, fill: "#F25F24" },
-      {name: "B", uv: data[2], pv: 7, fill: "#FF763F" },
+      {name: "A", uv: data[5], pv: 7, fill: "#F25F24" },
+      {name: "B", uv: data[4], pv: 7, fill: "#FF763F" },
       {name: "C", uv: data[3], pv: 7, fill: "#A5380C" },
-      {name: "D", uv: data[4], pv: 7, fill: "#24F2D1" },
-      {name: "F", uv: data[5], pv: 7, fill: "#00A58B" },
+      {name: "D", uv: data[2], pv: 7, fill: "#24F2D1" },
+      {name: "F", uv: data[1], pv: 7, fill: "#00A58B" },
     ]
   }
 
