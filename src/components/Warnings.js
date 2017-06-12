@@ -22,7 +22,7 @@ class Warnings extends Component {
 
   renderWarning(warning) {
     return (
-      <Row >
+      <Row key={warning.message}>
         <Col xs={12} className="warning sub-title">
           <i className={`fa ${warning.icon} icon`} aria-hidden="true"></i>
           {warning.message.toUpperCase()}

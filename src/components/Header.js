@@ -3,39 +3,21 @@ import logo from '../images/logo.png';
 import {Row, Col, NavDropdown, MenuItem} from 'react-bootstrap';
 
 class Header extends Component {
-  constructor() {
-    super();
-    this.state = {
-      cities: [
-      {
-        id:  "1.1",
-        name: "Indianapolis, IN"
-      },{
-        id: "1.2",
-        name: "Bloomington, IN"
-      }
-    ],
-      selected_city: "1.1",
-    };
-  }
 
-  cityChanged(city) {
-    this.setState({selected_city: city.id});
-  }
-
-  renderDropdownList() {
-    let cities = this.state.cities;
+  renderDropdownList(locations) {
+    if (locations === null) return;
     const items = [];
-    for(let i = 0; i < cities.length; i++) {
-      let city = cities[i];
+    for(let i = 0; i < locations.length; i++) {
+      let city = locations[i];
       items.push(
-        <MenuItem key={city.id} onClick={() => this.cityChanged(city)}>{city.name}</MenuItem>
+        <MenuItem key={city.slug} onClick={() => this.props.changeCity(city)}>{city.name}</MenuItem>
       );
     }
     return items;
   }
 
   render() {
+    let locations = this.props.locations;
     return (
       <Row className="Header">
         <div className="header_container">
@@ -44,8 +26,8 @@ class Header extends Component {
           </Col>
           <Col md={3}>
             <i className="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-            <NavDropdown key="1" title={(this.state.cities.find(c => c.id === this.state.selected_city)).name.toUpperCase()} id="nav-dropdown-within-tab">
-              {this.renderDropdownList()}
+            <NavDropdown key="1" title={this.props.city.name} id="nav-dropdown-within-tab">
+              {this.renderDropdownList(locations)}
             </NavDropdown>
           </Col>
         </div>
