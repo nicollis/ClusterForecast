@@ -5,7 +5,7 @@ function UnpackData(payload, callback) {
     locationData.push({
       name: name, 
       slug: slug, 
-      location: location, 
+      location: location,
       hours: hours
     });
   }
