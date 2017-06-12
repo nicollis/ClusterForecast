@@ -8,7 +8,7 @@ class Warnings extends Component {
       messages: [
         {
           icon: 'fa-sun-o',
-          message: 'No Zone Action Day',
+          message: 'UV Warning',
         }, {
           icon: 'fa-pagelines',
           message: 'Allergy Warning',

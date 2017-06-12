@@ -67,7 +67,7 @@ class App extends Component {
                   <Warnings/>
                 </Col>
                 <Col md={6}>
-                  <Stats/>
+                  <Stats weather={this.state.selected_weather}/>
                 </Col>
               </Row>
               <Row>
