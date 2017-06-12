@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
+// This has been left static, I would love to pull in wunderground's alerts
+// but for the scope of this project its not nessisary
+// instead of removing them I decided to leave them as a concept
 class Warnings extends Component {
   constructor() {
     super();
