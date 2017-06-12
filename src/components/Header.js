@@ -26,7 +26,7 @@ class Header extends Component {
           </Col>
           <Col md={3}>
             <i className="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-            <NavDropdown key="1" title={this.props.city.name} id="nav-dropdown-within-tab">
+            <NavDropdown key="1" title={this.props.city.name.toUpperCase()} id="nav-dropdown-within-tab">
               {this.renderDropdownList(locations)}
             </NavDropdown>
           </Col>

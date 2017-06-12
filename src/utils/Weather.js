@@ -20,11 +20,13 @@ function UnpackData(location, data, callback) {
     let [rain, snow] = ProcessChanceOf(period.detailedForecast);
     let days_weather = {
       day_name: period.name,
+      date: (/\d{2}-\d{2}(?=T)/g.exec(period.startTime)[0]),
+      temperature: period.temperature,
       condition: period.shortForecast,
       chance_of_rain: rain,
       chance_of_snow: snow
     }
-    if (period.isDaytime === true || period.number === 1) {forecast.push(days_weather)};
+    if (period.isDaytime === true) {forecast.push(days_weather)};
   }
   callback(location, forecast);
 }
@@ -39,4 +41,19 @@ export function PullWeatherData(locations, callback) {
       console.log(`Error pulling Weather data for ${location.slug}: ${err}`);
     });
   }
+}
+
+export function GetConditionIcon(condition) {
+  let icon = 'fa-sun-o';
+  //check for thunderstoms
+  if (/thunder/g.exec(condition)){
+    icon = 'fa-bolt';
+  }else if(/(rain|showers)/g.exec(condition)){
+    icon = 'fa-tint';
+  }else if(/cloud/g.exec(condition)){
+    icon = 'fa-cloud';
+  }else if(/snow/g.exec(condition)){
+    icon = 'fa-snowflake-o';
+  }
+  return icon;
 }

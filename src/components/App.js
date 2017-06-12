@@ -22,6 +22,7 @@ class App extends Component {
       updatedState['selected_weather'] = weather[location.slug];
     }
     this.setState(updatedState);
+    console.log(this.state);
   }
 
   constructor(){
@@ -31,7 +32,7 @@ class App extends Component {
       locations: null,
       weather: null,
       selected_location: {name: "Loading..."},
-      selected_weather: {},
+      selected_weather: null,
     }
   }
 
@@ -58,20 +59,27 @@ class App extends Component {
           changeCity={(i) => this.changeCity(i)}
         />
         <div className="dashboard">
-          <Row>
-            <Col md={6}>
-              <DayForecast weather={this.state.selected_weather} />
-              <Warnings/>
-            </Col>
-            <Col md={6}>
-              <Stats/>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12}>
-              <TenDayForecast/>
-            </Col>
-          </Row>
+          {this.state.selected_weather !== null &&
+            <div>
+              <Row>
+                <Col md={6}>
+                  <DayForecast weather={this.state.selected_weather} />
+                  <Warnings/>
+                </Col>
+                <Col md={6}>
+                  <Stats/>
+                </Col>
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <TenDayForecast/>
+                </Col>
+              </Row>
+            </div>
+          }
+          {this.state.selected_weather === null &&
+            <h1>Loading...</h1>
+          }
         </div>
       </div>
     );

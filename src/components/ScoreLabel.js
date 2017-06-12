@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import truck from '../images/cluster-truck.png'
-import { letter_grade } from '../utils/ScoreConversion'
+import { LetterGrade } from '../utils/Score'
 
 class ScoreLabel extends Component {
 
@@ -9,13 +9,13 @@ class ScoreLabel extends Component {
     if(score === 5) {
       return (
         <g className="score_label" transform={`translate(${x-63},${y-75})`}>
-          <image xlinkHref="/cluster-truck.png" x={width/7} y={0} height={width} width={width} >{letter_grade(score)}</image>
+          <image xlinkHref="/cluster-truck.png" x={width/7} y={0} height={width} width={width} >{LetterGrade(score)}</image>
         </g>
       );
     } else {
       return (
         <g className="score_label" transform={`translate(${x+18},${y})`}>
-          <text x={0} y={0} textAnchor="end" style={{fill: fill, stroke: '#000', strokeWidth: 2, fontSize: 50}}>{letter_grade(score)}</text>
+          <text x={0} y={0} textAnchor="end" style={{fill: fill, stroke: '#000', strokeWidth: 2, fontSize: 50}}>{LetterGrade(score)}</text>
         </g>
       );
     }
