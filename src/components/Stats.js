@@ -12,18 +12,18 @@ class Stats extends Component {
     this.state = {
       weekly_view: {
         last_week: [
-          {name: "A", uv: 1, pv: 7, fill: "#F25F24" },
-          {name: "B", uv: 0, pv: 7, fill: "#FF763F" },
-          {name: "C", uv: 3, pv: 7, fill: "#A5380C" },
-          {name: "D", uv: 1, pv: 7, fill: "#24F2D1" },
-          {name: "F", uv: 2, pv: 7, fill: "#00A58B" },
+          {name: "A", value: 1, fill: "#F25F24" },
+          {name: "B", value: 0, fill: "#FF763F" },
+          {name: "C", value: 3, fill: "#A5380C" },
+          {name: "D", value: 1, fill: "#24F2D1" },
+          {name: "F", value: 2, fill: "#00A58B" },
         ],
         next_week: [
-          {name: "A", uv: 0, pv: 7, fill: "#F25F24" },
-          {name: "B", uv: 2, pv: 7, fill: "#FF763F" },
-          {name: "C", uv: 2, pv: 7, fill: "#A5380C" },
-          {name: "D", uv: 1, pv: 7, fill: "#24F2D1" },
-          {name: "F", uv: 2, pv: 7, fill: "#00A58B" },
+          {name: "A", value: 0, fill: "#F25F24" },
+          {name: "B", value: 2, fill: "#FF763F" },
+          {name: "C", value: 2, fill: "#A5380C" },
+          {name: "D", value: 1, fill: "#24F2D1" },
+          {name: "F", value: 2, fill: "#00A58B" },
         ],
       },
       next_week_verbiage: "Lower",
@@ -37,11 +37,11 @@ class Stats extends Component {
       data[CalculateGrade(day)] += 1;
     }
     return [
-      {name: "A", uv: data[5], pv: 7, fill: "#F25F24" },
-      {name: "B", uv: data[4], pv: 7, fill: "#FF763F" },
-      {name: "C", uv: data[3], pv: 7, fill: "#A5380C" },
-      {name: "D", uv: data[2], pv: 7, fill: "#24F2D1" },
-      {name: "F", uv: data[1], pv: 7, fill: "#00A58B" },
+      {name: "A", value: data[5], fill: "#F25F24" },
+      {name: "B", value: data[4], fill: "#FF763F" },
+      {name: "C", value: data[3], fill: "#A5380C" },
+      {name: "D", value: data[2], fill: "#24F2D1" },
+      {name: "F", value: data[1], fill: "#00A58B" },
     ]
   }
 
@@ -55,7 +55,7 @@ class Stats extends Component {
           </Col>
           <Col sm={6}>
             <RadialBarChart width={125} height={125} innerRadius="5%" barCategoryGap="3%" data={this.generateWeekData(this.props.weather)}>
-              <RadialBar startAngle={90} endAngle={-270} minAngle={15} label background clockWise={true} dataKey='uv' />
+              <RadialBar startAngle={90} endAngle={-270} maxAngle={360} label background clockWise={true} dataKey='value' />
               <Tooltip />
             </RadialBarChart>
           </Col>
@@ -65,14 +65,14 @@ class Stats extends Component {
           <Col sm={6}>
             <h3 className="sub-title">LAST WEEK:</h3>
             <RadialBarChart width={125} height={125} innerRadius="5%" barCategoryGap="3%" data={this.state.weekly_view.last_week}>
-              <RadialBar startAngle={90} endAngle={-270} minAngle={15} label background clockWise={true} dataKey='uv' />
+              <RadialBar startAngle={90} endAngle={-270} maxAngle={360} label background clockWise={true} dataKey='value' />
               <Tooltip />
             </RadialBarChart>
           </Col>
           <Col sm={6}>
              <h3 className="sub-title">NEXT WEEK:</h3>
             <RadialBarChart width={125} height={125} innerRadius="5%" barCategoryGap="3%" data={this.state.weekly_view.next_week}>
-              <RadialBar startAngle={90} endAngle={-270} minAngle={15} label background clockWise={true} dataKey='uv' />
+              <RadialBar startAngle={90} endAngle={-270} maxAngle={360} label background clockWise={true} dataKey='value' />
               <Tooltip />
             </RadialBarChart>
           </Col>
