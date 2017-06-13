@@ -13,7 +13,7 @@ class TenDayForecast extends Component {
         name: day.day_name,
         score: CalculateGrade(day),
         temp: day.temperature,
-        rain: parseInt(day.chance_of_rain)
+        rain: parseInt(day.chance_of_rain) || 0
       };
       data.push(instance);
     }
