@@ -79,10 +79,10 @@ export function CalculateGrade(weather) {
   weight += GetWeatherMod(weather);
   let score = 0;
   switch (true) {
-    case(weight >= 10 && weight <= 15):
+    case(weight >= 9 && weight <= 15):
       score = 5;
       break;
-    case(weight >= 7 && weight <= 9):
+    case(weight >= 7 && weight <= 8):
       score = 4;
       break;
     case(weight >= 4 && weight <= 6):

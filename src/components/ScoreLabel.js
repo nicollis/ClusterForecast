@@ -8,7 +8,7 @@ class ScoreLabel extends Component {
     const {fill, score, x, y, width} = this.props;
     if(score === 5) {
       return (
-        <g className="score_label" transform={`translate(${x-63},${y-75})`}>
+        <g className="score_label" transform={`translate(${x-width/1.8},${y-width/1.5})`}>
           <image xlinkHref="/cluster-truck.png" x={width/7} y={0} height={width} width={width} >{LetterGrade(score)}</image>
         </g>
       );
