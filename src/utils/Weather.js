@@ -46,13 +46,13 @@ export function PullWeatherData(locations, callback) {
 export function GetConditionIcon(condition) {
   let icon = 'fa-sun-o';
   //check for thunderstoms
-  if (/thunder/g.exec(condition)){
+  if (/thunder/gi.exec(condition)){
     icon = 'fa-bolt';
-  }else if(/(rain|showers)/g.exec(condition)){
+  }else if(/(rain|showers)/gi.exec(condition)){
     icon = 'fa-tint';
-  }else if(/cloud/g.exec(condition)){
+  }else if(/cloud/gi.exec(condition)){
     icon = 'fa-cloud';
-  }else if(/snow/g.exec(condition)){
+  }else if(/snow/gi.exec(condition)){
     icon = 'fa-snowflake-o';
   }
   return icon;
