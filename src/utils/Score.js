@@ -13,7 +13,7 @@ const DayMods = {
   Thursday: 4,
   Friday: 5,
   Saturday: 3,
-  Sunday: 3
+  Sunday: 3,
 }
 
 const WeatherMods = {
@@ -30,6 +30,17 @@ const LastDayOfMonth = {
   "31": ["01", "03", "05", "07", "08", "10", "12"],
   "30": ["04", "06", "09", "11"],
   "28": ["02"]
+}
+
+const WeekDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
+
+function GetDayMod(weather) {
+  let score =  DayMods[weather.day_name];
+  if (score === undefined) {
+    let date = new Date();
+    score = DayMods[WeekDay[date.getDay()]];
+  }
+  return score;
 }
 
 function GetWeatherMod(weather){
@@ -63,7 +74,7 @@ export function LetterGrade(number) {
 }
 
 export function CalculateGrade(weather) {
-  let weight = DayMods[weather.day_name];
+  let weight = GetDayMod(weather);
   weight += isLastDayOfMonth(weather.date) ? DateMods.last_day_of_month : 0;
   weight += GetWeatherMod(weather);
   let score = 0;
